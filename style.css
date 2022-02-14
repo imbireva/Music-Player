@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+/* music-player block */
+
+.music-player {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 280px;
+    height: 450px;
+    margin: auto 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e4e4e4;
+    box-shadow: 0 0 6px;
+}
+
+img {
+    box-shadow: 0 0 3px;
+}
+
+.title,
+.progress-bar,
+.time,
+.buttons {
+    width: 100%;
+}
+
+.title {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.singer-title {
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    line-height: 50px;   
+}
+
+.progress-bar {
+    background-color: #c2c2c2;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0;
+    height: 4px;
+    background-color: #b30320;
+}
+
+.time {  
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.backward,
+.play-pause,
+.play-pause.pause,
+.forward {
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.backward,
+.forward {
+    width: 40px;
+    height: 40px;
+}
+
+.backward {
+    background: url(assets/svg/backward.png);
+    background-size: cover;
+}
+
+.play-pause {
+    height: 50px;
+    width: 50px;
+    background: url(assets/svg/play.png);
+    background-size: cover;
+}
+
+.play-pause.pause {
+    background: url(assets/svg/pause.png);
+    background-size: cover;
+}
+
+.forward {
+    background: url(assets/svg/forward.png);
+    background-size: cover;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 60px;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.my-github {
+    width: 40px;
+    height: 40px;
+    background: url(assets/svg/github.png);
+    background-size: cover;
+}
+
+.rs-logo {
+    width: 80px;
+    height: 40px;
+    background: url(assets/svg/rs-school.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
