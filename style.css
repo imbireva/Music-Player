@@ -77,10 +77,19 @@ img {
 .backward,
 .play-pause,
 .play-pause.pause,
-.forward {
+.forward,
+.my-github {
     border: none;
     cursor: pointer;
-    transition: .2s;
+    transition: .4s;
+}
+
+.backward:hover,
+.play-pause:hover,
+.play-pause.pause:hover,
+.forward:hover,
+.my-github:hover {
+    filter: invert(65%) sepia(14%) saturate(0%) hue-rotate(166deg) brightness(91%) contrast(88%);
 }
 
 .backward,
@@ -90,24 +99,24 @@ img {
 }
 
 .backward {
-    background: url(assets/svg/backward.png);
+    background: url(assets/svg/skip-previous.svg);
     background-size: cover;
 }
 
 .play-pause {
     height: 50px;
     width: 50px;
-    background: url(assets/svg/play.png);
+    background: url(assets/svg/play.svg);
     background-size: cover;
 }
 
 .play-pause.pause {
-    background: url(assets/svg/pause.png);
+    background: url(assets/svg/pause.svg);
     background-size: cover;
 }
 
 .forward {
-    background: url(assets/svg/forward.png);
+    background: url(assets/svg/skip-next.svg);
     background-size: cover;
 }
 
