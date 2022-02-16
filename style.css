@@ -26,13 +26,12 @@ body {
     height: 450px;
     margin: auto 0;
     padding: 20px;
-    border-radius: 20px;
-    background-color: #e4e4e4;
-    box-shadow: 0 0 6px;
+    background-color: #cccccc;
+    border: solid 2px #999999;
 }
 
 img {
-    box-shadow: 0 0 3px;
+    border: solid 2px #333333;
 }
 
 .title,
@@ -53,14 +52,14 @@ img {
 }
 
 .progress-bar {
-    background-color: #c2c2c2;
+    background-color: #999999;
     cursor: pointer;
 }
 
 .progress {
     width: 0;
     height: 4px;
-    background-color: #b30320;
+    background-color: #333333;
 }
 
 .time {  
